@@ -6,7 +6,7 @@ import "./styles/container.css"
 import './styles/App.css'
 
 function App() {
-    const API_KEY = "SgYd3vQ9uNgI4QzY5jJSMGOyxh2Gk1KE";
+    const API_KEY = import.meta.env.VITE_API_KEY ?? "";
 
     // const [dataLen, setDataLen] = useState([]);
     const [euro, setEuro] = useState(0);
